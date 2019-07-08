@@ -1,5 +1,6 @@
 package dao;
 
+import models.Department;
 import models.User;
 import org.junit.After;
 import org.junit.Before;
@@ -63,6 +64,7 @@ public class Sql2oUserDaoTest {
         userDao.clearAll();
         assertEquals(0, userDao.getAll().size());
     }
+
 
     public User setupNewUser() {
         return new User("Apiyo", 1, "accountant");

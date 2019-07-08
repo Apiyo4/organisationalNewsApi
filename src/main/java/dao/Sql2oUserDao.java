@@ -1,5 +1,6 @@
 package dao;
 
+import models.Department;
 import models.User;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
@@ -37,15 +38,11 @@ public class Sql2oUserDao implements UserDao{
     @Override
     public void deleteById(int id) {
         String sql = "DELETE from users WHERE id=:id";
-//        String deleteJoin = "DELETE from departments_users WHERE userid = :userId";
         try (Connection con = sql2o.open()) {
             con.createQuery(sql)
                     .addParameter("id", id)
                     .executeUpdate();
 
-//            con.createQuery(deleteJoin)
-//                    .addParameter("userId", id)
-//                    .executeUpdate();
         } catch (Sql2oException ex){
             System.out.println(ex);
         }
@@ -60,4 +57,14 @@ public class Sql2oUserDao implements UserDao{
             System.out.println(ex);
         }
     }
+
+    @Override
+    public User findById(int id) {
+        try(Connection con = sql2o.open()){
+            return con.createQuery("SELECT * FROM users WHERE id = :id")
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(User.class);
+        }
+    }
+
 }

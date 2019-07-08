@@ -16,6 +16,7 @@ public class Sql2oDepartmentDaoTest {
     private Connection conn;
     private Sql2oDepartmentDao departmentDao;
     private Sql2oUserDao userDao;
+
     @Before
     public void setUp() throws Exception {
         String connectionString = "jdbc:h2:mem:testing;INIT=RUNSCRIPT from 'classpath:db/create.sql'";
@@ -40,7 +41,9 @@ public class Sql2oDepartmentDaoTest {
 
     @Test
     public void getAll() throws Exception{
-
+        Department testDepartment = new Department("accounting", "handles firm budget", 6);
+        departmentDao.add(testDepartment);
+        assertEquals(1, departmentDao.getAll().size());
     }
 
     @Test
@@ -60,21 +63,6 @@ public class Sql2oDepartmentDaoTest {
         assertEquals(testDepartment, departmentDao.findById(testDepartment.getId()));
     }
 
-//    @Test
-//    public void updateCorrectlyUpdatesAllFields() throws Exception {
-//        Department testDepartment = setupNewDepartment();
-//        departmentDao.update(testDepartment.getId(), "a", "b", "c");
-//        Department foundDepartment = departmentDao.findById(testDepartment.getId());
-//        assertEquals("a", foundDepartment.getDepartmentName());
-//        assertEquals("b", foundDepartment.getDescription());
-//        assertEquals("c", foundDepartment.getNumberOfEmployees());
-//    }
-
-    public Department setupNewDepartment(){
-        Department department = new Department("accounting", "handles company's finance", 5);
-        departmentDao.add(department);
-        return department;
-    }
 
     @Test
     public void deleteByIdDeletesCorrectDepartment() throws Exception {
@@ -90,23 +78,11 @@ public class Sql2oDepartmentDaoTest {
         departmentDao.clearAll();
         assertEquals(0, departmentDao.getAll().size());
     }
-//
-//    @Test
-//    public void getAllUsersForADepartmentReturnsUsersCorrectly() throws Exception {
-//        User testUser  = new User("Apiyo", 1, "accountant");
-//        userDao.add(testUser);
-//
-//        User otherUser  = new User("Annette", 2, "programmer");
-//        userDao.add(otherUser);
-//
-//        Department testDepartment = setupNewDepartment();
-//        departmentDao.add(testDepartment);
-//        departmentDao.addDepartmentToUser(testDepartment,testUser);
-//        departmentDao.addDepartmentToUser(testDepartment,otherUser);
-//
-//        User[] users = {testUser, otherUser};
-//
-//        assertEquals(Arrays.asList(users), departmentDao.getAllUsersByDepartment(testDepartment.getId()));
-//    }
 
+
+    public Department setupNewDepartment(){
+        Department department = new Department("accounting", "handles company's finance", 5);
+        departmentDao.add(department);
+        return department;
+    }
 }

@@ -8,12 +8,12 @@ import java.util.List;
 public interface DepartmentDao {
     //create
     void add (Department department);
-//    void addDepartmentToUser(Department department, User user);
+  // void addDepartmentToUser(Department department, User user);
 
     //read
     List<Department> getAll();
     Department findById(int id);
-    //List<User> getAllUsersByDepartment(int departmentId);
+   // List<User> getAllUsersByDepartment(int departmentId);
 
     //update
 //    void update(int id, String departmentName, String description, int numberOfEmployees);

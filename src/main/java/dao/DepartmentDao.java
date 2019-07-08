@@ -8,7 +8,7 @@ import java.util.List;
 public interface DepartmentDao {
     //create
     void add (Department department);
-    //void addDepartmentToUser(Department department, user user);
+//    void addDepartmentToUser(Department department, User user);
 
     //read
     List<Department> getAll();
@@ -16,7 +16,7 @@ public interface DepartmentDao {
     //List<User> getAllUsersByDepartment(int departmentId);
 
     //update
-    void update(int id, String departmentName, String description, int numberOfEmployees);
+//    void update(int id, String departmentName, String description, int numberOfEmployees);
 
     //delete
     void deleteById(int id);

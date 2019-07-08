@@ -10,6 +10,6 @@ CREATE TABLE IF NOT EXISTS departments (
 CREATE TABLE IF NOT EXISTS users (
  id int PRIMARY KEY auto_increment,
  username VARCHAR,
- departmentId,
- role
+ departmentId int,
+ role VARCHAR
 );

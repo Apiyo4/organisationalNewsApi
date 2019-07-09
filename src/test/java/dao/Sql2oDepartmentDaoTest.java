@@ -79,6 +79,19 @@ public class Sql2oDepartmentDaoTest {
         assertEquals(0, departmentDao.getAll().size());
     }
 
+    @Test
+    public void getAllUsersForADepartmentReturnsUsersCorrectly() {
+        Department testDepartment = new Department ("accounting", "handles company's finance", 5);
+        departmentDao.add(testDepartment);
+        int theId = testDepartment.getId();
+        User firstUser = new User("Apiyo", theId, "accountant");
+        userDao.add(firstUser);
+        User secondUser = new User("Annette", theId, "programmer");
+        userDao.add(secondUser);
+
+        User[] users = {firstUser, secondUser};
+        assertEquals(Arrays.asList(users), departmentDao.getUsers(testDepartment.getId()));
+    }
 
     public Department setupNewDepartment(){
         Department department = new Department("accounting", "handles company's finance", 5);

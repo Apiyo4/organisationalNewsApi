@@ -64,7 +64,14 @@ public class Sql2oUserDaoTest {
         userDao.clearAll();
         assertEquals(0, userDao.getAll().size());
     }
-
+    @Test
+    public void add_addDepartmentIdIntoDB_true() {
+        Department testDepartment = new Department("accounting", "handles firm accounting", 6);
+        departmentDao.add(testDepartment);
+        User testUser = new User("Bubbles", testDepartment.getId(), "auditor");
+        userDao.add(testUser);
+        assertEquals(testUser.getDepartmentId(), testDepartment.getId());
+    }
 
     public User setupNewUser() {
         return new User("Apiyo", 1, "accountant");

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba161807-d273-4713-885b-9dceb95f76f7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Sql2oDepartmentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Sql2oDepartmentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/Sql2oDepartmentDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/Sql2oDepartmentDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/Sql2oUserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/Sql2oUserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/models/NewsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/models/NewsTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,13 +51,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oUserDao.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oNewsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+            <state>
+              <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oDepartmentDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/News.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+              <folding>
+                <element signature="e#813#814#0" expanded="true" />
+                <element signature="e#838#839#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,8 +90,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="300">
+              <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,13 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oUserDaoTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dao/NewsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="30">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -107,19 +128,19 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/models/DepartmentTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/models/NewsTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/models/News.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/SpecificNews.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Department.java" />
         <option value="$PROJECT_DIR$/src/test/java/models/UserTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/Sql2oUserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/db/create.sql" />
         <option value="$PROJECT_DIR$/src/test/java/dao/Sql2oDepartmentDaoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/Sql2oUserDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DepartmentDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/Sql2oDepartmentDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/test/java/models/NewsTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/db/create.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/models/News.java" />
       </list>
     </option>
   </component>
@@ -253,13 +274,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Sql2oUserDaoTest">
-    <configuration name="Sql2oDepartmentDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.NewsTest">
+    <configuration name="NewsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dao.Sql2oDepartmentDaoTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;models.NewsTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -274,12 +295,52 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="NewsTest.getContentGetsContentCorrectly_String" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dao.Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly&quot;" />
+        <option name="scriptParameters" value="--tests &quot;models.NewsTest.getContentGetsContentCorrectly_String&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsTest.getTypeGetsTypeCorrectly" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;models.NewsTest.getTypeGetsTypeCorrectly&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="NewsTest.setDepartmentIdSetsDepartmentId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;models.NewsTest.setDepartmentIdSetsDepartmentId&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -314,53 +375,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Sql2oUserDaoTest.add_addDepartmentIdIntoDB_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dao.Sql2oUserDaoTest.add_addDepartmentIdIntoDB_true&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Sql2oUserDaoTest.save_savesDepartmentIdIntoDB_true" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dao.Sql2oUserDaoTest.save_savesDepartmentIdIntoDB_true&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.NewsTest" />
+        <item itemvalue="Gradle.NewsTest.setDepartmentIdSetsDepartmentId" />
+        <item itemvalue="Gradle.NewsTest.getTypeGetsTypeCorrectly" />
+        <item itemvalue="Gradle.NewsTest.getContentGetsContentCorrectly_String" />
         <item itemvalue="Gradle.Sql2oUserDaoTest" />
-        <item itemvalue="Gradle.Sql2oDepartmentDaoTest" />
-        <item itemvalue="Gradle.Sql2oUserDaoTest.add_addDepartmentIdIntoDB_true" />
-        <item itemvalue="Gradle.Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" />
-        <item itemvalue="Gradle.Sql2oUserDaoTest.save_savesDepartmentIdIntoDB_true" />
       </list>
     </recent_temporary>
   </component>
@@ -378,35 +399,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Sql2oDepartmentDaoTest_getAllUsersForADepartmentReturnsUsersCorrectly - 2019.07.09 at 07h 17m 26s.xml">
-      <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_getContentGetsContentCorrectly_String - 2019.07.09 at 10h 10m 47s.xml">
+      <configuration name="NewsTest.getContentGetsContentCorrectly_String" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest_getAllUsersForADepartmentReturnsUsersCorrectly - 2019.07.09 at 07h 17m 36s.xml">
-      <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_getContentGetsContentCorrectly_String - 2019.07.09 at 10h 10m 52s.xml">
+      <configuration name="NewsTest.getContentGetsContentCorrectly_String" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest_getAllUsersForADepartmentReturnsUsersCorrectly - 2019.07.09 at 07h 32m 49s.xml">
-      <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_getContentGetsContentCorrectly_String - 2019.07.09 at 10h 11m 23s.xml">
+      <configuration name="NewsTest.getContentGetsContentCorrectly_String" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest_getAllUsersForADepartmentReturnsUsersCorrectly - 2019.07.09 at 07h 33m 43s.xml">
-      <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest - 2019.07.09 at 10h 26m 03s.xml">
+      <configuration name="NewsTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest_getAllUsersForADepartmentReturnsUsersCorrectly - 2019.07.09 at 07h 37m 04s.xml">
-      <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest - 2019.07.09 at 10h 28m 39s.xml">
+      <configuration name="NewsTest" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest_getAllUsersForADepartmentReturnsUsersCorrectly - 2019.07.09 at 07h 37m 52s.xml">
-      <configuration name="Sql2oDepartmentDaoTest.getAllUsersForADepartmentReturnsUsersCorrectly" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_getTypeGetsTypeCorrectly - 2019.07.09 at 10h 29m 07s.xml">
+      <configuration name="NewsTest.getTypeGetsTypeCorrectly" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest - 2019.07.09 at 07h 44m 03s.xml">
-      <configuration name="Sql2oDepartmentDaoTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_getTypeGetsTypeCorrectly - 2019.07.09 at 10h 31m 19s.xml">
+      <configuration name="NewsTest.getTypeGetsTypeCorrectly" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oUserDaoTest_add_addDepartmentIdIntoDB_true - 2019.07.09 at 08h 06m 21s.xml">
-      <configuration name="Sql2oUserDaoTest.add_addDepartmentIdIntoDB_true" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_setDepartmentIdSetsDepartmentId - 2019.07.09 at 10h 33m 20s.xml">
+      <configuration name="NewsTest.setDepartmentIdSetsDepartmentId" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oDepartmentDaoTest - 2019.07.09 at 08h 15m 01s.xml">
-      <configuration name="Sql2oDepartmentDaoTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest_setDepartmentIdSetsDepartmentId - 2019.07.09 at 10h 33m 23s.xml">
+      <configuration name="NewsTest.setDepartmentIdSetsDepartmentId" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="Sql2oUserDaoTest - 2019.07.09 at 08h 15m 08s.xml">
-      <configuration name="Sql2oUserDaoTest" configurationId="GradleRunConfiguration" />
+    <history-entry file="NewsTest - 2019.07.09 at 10h 33m 30s.xml">
+      <configuration name="NewsTest" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -422,7 +443,7 @@
       <window_info id="Favorites" order="6" side_tool="true" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39285713" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29347825" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39906833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -489,31 +510,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/NewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oNewsDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/SpecificNews.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/models/NewsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -547,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -584,23 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oDepartmentDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/DepartmentDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
@@ -611,20 +587,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oUserDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="266">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oUserDaoTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/models/NewsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="264">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -633,8 +609,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oUserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="68" lean-forward="true" selection-start-line="68" selection-end-line="68" />
+        <state relative-caret-position="60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/NewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#813#814#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oNewsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" lean-forward="true" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oDepartmentDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="9" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

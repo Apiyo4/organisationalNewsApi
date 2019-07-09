@@ -43,6 +43,19 @@ public class NewsTest {
         assertEquals( true, newNews.equals(anotherNews));
     }
 
+    @Test
+    public void getTypeGetsTypeCorrectly() {
+        News newNews = new News("Ceo, Bob Collimore, dies", 4 );
+        assertEquals(4, newNews.getDepartmentId());
+    }
+
+    @Test
+    public void setDepartmentIdSetsDepartmentId() {
+        News newNews = setupNews();
+        newNews.setDepartmentId(8);
+        assertEquals(8, newNews.getDepartmentId());
+    }
+
     public News setupNews(){
         return new News("Ceo, Bob Collimore, dies");
     }

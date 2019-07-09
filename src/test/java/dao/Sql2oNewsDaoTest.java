@@ -1,5 +1,6 @@
 package dao;
 
+import models.Department;
 import models.News;
 import org.junit.After;
 import org.junit.Before;
@@ -70,6 +71,15 @@ public class Sql2oNewsDaoTest {
         News testNews = setupNews();
         News otherNews = setupNews();
         assertEquals(testNews, newsDao.findById(testNews.getId()));
+    }
+
+    @Test
+    public void add_addDepartmentIdIntoDB_true() {
+        Department testDepartment = new Department("accounting", "handles firm accounting", 6);
+        departmentDao.add(testDepartment);
+        News testNews = new News("Bob dies", testDepartment.getId());
+        newsDao.add(testNews);
+        assertEquals(testNews.getDepartmentId(), testDepartment.getId());
     }
 
 

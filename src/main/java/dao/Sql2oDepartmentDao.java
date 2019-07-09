@@ -1,5 +1,6 @@
 package dao;
 
+import models.News;
 import models.User;
 import models.Department;
 import org.sql2o.Connection;
@@ -77,6 +78,16 @@ public class Sql2oDepartmentDao implements DepartmentDao{
             return con.createQuery(sql)
                     .addParameter("departmentId", departmentId)
                     .executeAndFetch(User.class);
+        }
+    }
+
+    @Override
+    public List<News> getNews(int departmentId) {
+        String sql = "SELECT * FROM news where departmentId=:departmentId";
+        try(Connection con = sql2o.open()) {
+            return con.createQuery(sql)
+                    .addParameter("departmentId", departmentId)
+                    .executeAndFetch(News.class);
         }
     }
 }

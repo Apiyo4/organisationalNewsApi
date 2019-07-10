@@ -9,10 +9,11 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import exceptions.ApiException;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-import static spark.Spark.get;
-import static spark.Spark.post;
+import static spark.Spark.*;
 
 public class App {
 
@@ -131,6 +132,23 @@ public class App {
 
         get("/users", "application/json", (req, res) -> {
             return gson.toJson(userDao.getAll());
+        });
+
+
+        //FILTERS
+        exception(ApiException.class, (exception, req, res) -> {
+            ApiException err = exception;
+            Map<String, Object> jsonMap = new HashMap<>();
+            jsonMap.put("status", err.getStatusCode());
+            jsonMap.put("errorMessage", err.getMessage());
+            res.type("application/json");
+            res.status(err.getStatusCode());
+            res.body(gson.toJson(jsonMap));
+        });
+
+
+        after((req, res) ->{
+            res.type("application/json");
         });
     }
 }

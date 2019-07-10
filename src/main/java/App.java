@@ -21,6 +21,7 @@ import static spark.Spark.*;
 public class App {
 
     public static void main(String[] args) {
+        staticFileLocation("/public");
         Sql2oUserDao userDao;
         Sql2oDepartmentDao departmentDao;
         Sql2oNewsDao newsDao;
@@ -184,7 +185,7 @@ public class App {
         }, new HandlebarsTemplateEngine());
         get("/departments", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            return new ModelAndView(model, "index.hbs");
+            return new ModelAndView(model, "department.hbs");
         },new HandlebarsTemplateEngine());
         get("/users", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -213,6 +214,10 @@ public class App {
             model.put("news", newsDao.getAll());
             return new ModelAndView(model, "news.hbs");
         }, new HandlebarsTemplateEngine());
+        get("/", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "index.hbs");
+        },new HandlebarsTemplateEngine());
 
     }
 }

@@ -3,19 +3,19 @@
     <form action="/departments" method="post" >
         <div class="form-group">
             <label for="departmentName">Department Name</label>
-            <input type="text" id="departmentName" name="name" class="form-control" required>
-        </div>
-        <div class="form-group">
-            <label for="type">Description</label>
-            <select name="type" id="type" class="form-control" required>
+            <select name="departmentName" class="form-control" required>
                 <option>Accounting</option>
                 <option>Statistics</option>
                 <option>Programming</option>
             </select>
         </div>
         <div class="form-group">
+            <label for="type">Description</label>
+            <input type="text" name="description" class="form-control" required>
+        </div>
+        <div class="form-group">
             <label for="numberOfEmployees">Number of employees</label>
-            <input type="text" id="numberOfEmployees" name="name" class="form-control" required>
+            <input type="number" id="numberOfEmployees" name="numberOfEmployees" class="form-control" required>
         </div>
         <button type="submit" class="button btn-success">Submit</button>
     </form>

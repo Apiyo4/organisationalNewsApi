@@ -177,12 +177,14 @@ public class App {
             String departmentName = request.queryParams("departmentName");
             String description = request.queryParams("description");
             int numberOfEmployees = Integer.parseInt(request.queryParams("numberOfEmployees"));
-            Department newDepartment = new Department("departmentName", "description", numberOfEmployees);
+            Department newDepartment = new Department(departmentName, description, numberOfEmployees);
             departmentDao.add(newDepartment);
-
-            model.put("departments", Sql2oDepartmentDao.getAll());
-
+            model.put("departments", departmentDao.getAll());
             return new ModelAndView(model, "index.hbs");
         }, new HandlebarsTemplateEngine());
+        get("/departments", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "index.hbs");
+        },new HandlebarsTemplateEngine());
     }
 }

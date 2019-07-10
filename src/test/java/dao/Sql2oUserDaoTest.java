@@ -2,31 +2,39 @@ package dao;
 
 import models.Department;
 import models.User;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.*;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 
 import static org.junit.Assert.*;
 
 public class Sql2oUserDaoTest {
-    private Connection conn;
-    private Sql2oDepartmentDao departmentDao;
-    private Sql2oUserDao userDao;
+    private static  Connection conn;
+    private  static  Sql2oDepartmentDao departmentDao;
+    private static Sql2oUserDao userDao;
+    private static Sql2oNewsDao newsDao;
 
-    @Before
-    public void setUp() throws Exception {
-        String connectionString = "jdbc:h2:mem:testing;INIT=RUNSCRIPT from 'classpath:db/create.sql'";
-        Sql2o sql2o = new Sql2o(connectionString, "", "");
+    @BeforeClass
+    public static void setUp() throws Exception {
+        String connectionString = "jdbc:postgresql://localhost:5432/organisational_news_api_test";
+        Sql2o sql2o = new Sql2o(connectionString, "moringa", "moringa");
         departmentDao = new Sql2oDepartmentDao(sql2o);
         userDao = new Sql2oUserDao(sql2o);
+        newsDao = new Sql2oNewsDao(sql2o);
         conn = sql2o.open();
     }
 
     @After
     public void tearDown() throws Exception {
+        System.out.println("clearing database");
+        departmentDao.clearAll();
+        userDao.clearAll();
+        newsDao.clearAll();
+    }
+    @AfterClass
+    public static void shutDown() throws Exception{
         conn.close();
+        System.out.println("connection closed");
     }
 
     @Test
@@ -77,12 +85,9 @@ public class Sql2oUserDaoTest {
     public void getAllUsersByDepartment() throws Exception {
         Department testDepartment = setupDepartment();
         Department otherDepartment = setupDepartment();
-        User user1 = new User("Apiyo", 1, "accountant");
-        userDao.add(user1);
-        User user2 = new User("Apiyo", 1, "accountant");
-        userDao.add(user2);
-        User usersForOtherDepartment = new User("Apiyo", 2, "accountant");
-        userDao.add(usersForOtherDepartment);
+        User user1 = setupUserForDepartment(testDepartment);
+        User user2 = setupUserForDepartment(testDepartment);
+        User userForOtherDepartment = setupUserForDepartment(otherDepartment);
         assertEquals(2, userDao.getAllUsersByDepartment(testDepartment.getId()).size());
     }
 
@@ -92,6 +97,11 @@ public class Sql2oUserDaoTest {
         return department;
     }
 
+    public User setupUserForDepartment(Department department) {
+        User user = new User("Annette", department.getId(), "programmer");
+        userDao.add(user);
+        return user;
+    }
     public User setupNewUser() {
         return new User("Apiyo", 1, "accountant");
     }

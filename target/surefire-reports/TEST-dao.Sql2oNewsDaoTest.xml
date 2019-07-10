@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="dao.Sql2oNewsDaoTest" time="1.348" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="dao.Sql2oNewsDaoTest" time="0.722" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-LTS"/>
@@ -62,12 +62,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="findByIdReturnsCorrectNews" time="0.186"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="getAllNewsByDepartment" time="0.275"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="add_addDepartmentIdIntoDB_true" time="0.187"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="noNewsReturnsEmptyList" time="0.104"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="addedNewsAreReturnedFromGetAll" time="0.13"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="clearAll" time="0.175"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="deleteByIdDeletesCorrectNews" time="0.148"/>
-  <testcase classname="dao.Sql2oNewsDaoTest" name="addingNewsSetsId" time="0.143"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="findByIdReturnsCorrectNews" time="0.128"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="getAllNewsByDepartment" time="0.132"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="add_addDepartmentIdIntoDB_true" time="0.1"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="noNewsReturnsEmptyList" time="0.05"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="addedNewsAreReturnedFromGetAll" time="0.091"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="clearAll" time="0.066"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="deleteByIdDeletesCorrectNews" time="0.07"/>
+  <testcase classname="dao.Sql2oNewsDaoTest" name="addingNewsSetsId" time="0.085"/>
 </testsuite>

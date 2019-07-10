@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="dao.Sql2oUserDaoTest" time="1.063" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="dao.Sql2oUserDaoTest" time="0.477" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-LTS"/>
@@ -62,11 +62,11 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="dao.Sql2oUserDaoTest" name="addingUserSetsId" time="0.101"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="add_addDepartmentIdIntoDB_true" time="0.139"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="clearAll" time="0.121"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="addedUsersAreReturnedFromGetAll" time="0.135"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="noUserReturnsEmptyList" time="0.109"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="deleteByIdDeletesCorrectUser" time="0.166"/>
-  <testcase classname="dao.Sql2oUserDaoTest" name="getAllUsersByDepartment" time="0.292"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="addingUserSetsId" time="0.073"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="add_addDepartmentIdIntoDB_true" time="0.099"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="clearAll" time="0.055"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="addedUsersAreReturnedFromGetAll" time="0.084"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="noUserReturnsEmptyList" time="0.032"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="deleteByIdDeletesCorrectUser" time="0.053"/>
+  <testcase classname="dao.Sql2oUserDaoTest" name="getAllUsersByDepartment" time="0.081"/>
 </testsuite>

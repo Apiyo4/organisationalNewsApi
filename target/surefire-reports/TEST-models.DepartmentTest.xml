@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="models.DepartmentTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="models.DepartmentTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-LTS"/>
@@ -62,12 +62,12 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="models.DepartmentTest" name="departmentReturnsTrueIfDepartmentNameAndDescriptionAndNumberOfEmployeesAreSame" time="0.001"/>
-  <testcase classname="models.DepartmentTest" name="getDepartmentNameReturnsNameCorrectly_String" time="0"/>
+  <testcase classname="models.DepartmentTest" name="departmentReturnsTrueIfDepartmentNameAndDescriptionAndNumberOfEmployeesAreSame" time="0"/>
+  <testcase classname="models.DepartmentTest" name="getDepartmentNameReturnsNameCorrectly_String" time="0.001"/>
   <testcase classname="models.DepartmentTest" name="setDescriptionSetsCorrectDescription_String" time="0"/>
   <testcase classname="models.DepartmentTest" name="getDescriptionReturnsDescriptionCorrectly_String" time="0"/>
   <testcase classname="models.DepartmentTest" name="departmentInstantiatesCorrectly_true" time="0"/>
   <testcase classname="models.DepartmentTest" name="getNumbersOfEmployeesReturnsNumberOfEmployeesCorrectly_int" time="0"/>
-  <testcase classname="models.DepartmentTest" name="setNumbersOfEmployeesSetsCorrectNumberOfEmployees_int" time="0"/>
+  <testcase classname="models.DepartmentTest" name="setNumbersOfEmployeesSetsCorrectNumberOfEmployees_int" time="0.001"/>
   <testcase classname="models.DepartmentTest" name="setDepartmentNameSetsCorrectDepartmentName" time="0"/>
 </testsuite>

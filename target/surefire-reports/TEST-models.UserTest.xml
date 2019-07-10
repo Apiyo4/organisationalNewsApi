@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="8" failures="0" name="models.UserTest" time="0" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="models.UserTest" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.3+7-LTS"/>
@@ -65,7 +65,7 @@
   <testcase classname="models.UserTest" name="getsDepartmentIdReturnsDepartmentIdCorrectly" time="0"/>
   <testcase classname="models.UserTest" name="setsDepartmentIdSetsDepartmentIdCorrectly" time="0"/>
   <testcase classname="models.UserTest" name="userReturnsTrueIfUserNameAndDepartmentIdAndRoleAreSame" time="0"/>
-  <testcase classname="models.UserTest" name="userInstantiatesCorrectly" time="0"/>
+  <testcase classname="models.UserTest" name="userInstantiatesCorrectly" time="0.001"/>
   <testcase classname="models.UserTest" name="getsRoleReturnsRoleCorrectly_String" time="0"/>
   <testcase classname="models.UserTest" name="setsRoleSetsRoleCorrectly_String" time="0"/>
   <testcase classname="models.UserTest" name="getsUserNameReturnsUserNameCorrectly_String" time="0"/>

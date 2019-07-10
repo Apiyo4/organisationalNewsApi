@@ -73,6 +73,28 @@ public class Sql2oUserDaoTest {
         assertEquals(testUser.getDepartmentId(), testDepartment.getId());
     }
 
+    @Test
+    public void getAllUsersByDepartment() throws Exception {
+        Department testDepartment = setupDepartment();
+        Department otherDepartment = setupDepartment();
+        User user1 = setupUsersForDepartment(testDepartment);
+        User user2 = setupUsersForDepartment(testDepartment);
+        User usersForOtherDepartment = setupUsersForDepartment(otherDepartment);
+        assertEquals(2, userDao.getAllUsersByDepartment(testDepartment.getId()).size());
+    }
+
+    public User setupUsersForDepartment(Department department) {
+        User users = new User("Apiyo", 1, "accountant");
+                userDao.add(users);
+        return users;
+    }
+
+    public Department setupDepartment() {
+        Department department = new Department("accounting", "handles firm budget", 6);
+                departmentDao.add(department);
+        return department;
+    }
+
     public User setupNewUser() {
         return new User("Apiyo", 1, "accountant");
     }

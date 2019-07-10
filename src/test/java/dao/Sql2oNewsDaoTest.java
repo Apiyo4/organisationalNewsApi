@@ -81,7 +81,27 @@ public class Sql2oNewsDaoTest {
         newsDao.add(testNews);
         assertEquals(testNews.getDepartmentId(), testDepartment.getId());
     }
+    @Test
+    public void getAllNewsByDepartment() throws Exception {
+        Department testDepartment = setupDepartment();
+        Department otherDepartment = setupDepartment();
+        News news1 = setupNewsForDepartment(testDepartment);
+        News news2 = setupNewsForDepartment(testDepartment);
+        News newsForOtherDepartment = setupNewsForDepartment(otherDepartment);
+        assertEquals(2, newsDao.getAllNewsByDepartment(testDepartment.getId()).size());
+    }
 
+    public News setupNewsForDepartment(Department department) {
+        News news = new News("Michael joseph appointed interim CEO", department.getId());
+        newsDao.add(news);
+        return news;
+    }
+
+    public Department setupDepartment() {
+        Department department = new Department("accounting", "handles firm budget", 6);
+                departmentDao.add(department);
+        return department;
+    }
 
     public News setupNews(){
         News news = new News("Ceo, Bob Collimore, dies");

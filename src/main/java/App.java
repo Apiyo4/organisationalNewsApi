@@ -186,7 +186,7 @@ public class App {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "index.hbs");
         },new HandlebarsTemplateEngine());
-        get("/users/new", (request, response) -> {
+        get("/users", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "user.hbs");
         },new HandlebarsTemplateEngine());
@@ -200,7 +200,19 @@ public class App {
             model.put("users", userDao.getAll());
             return new ModelAndView(model, "user.hbs");
         }, new HandlebarsTemplateEngine());
-
+        get("/news", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "news-form.hbs");
+        },new HandlebarsTemplateEngine());
+        post("/news", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String content = request.queryParams("content");
+            int departmentId = Integer.parseInt(request.queryParams("departmentId"));
+            News newNews = new News(content, departmentId);
+            newsDao.add(newNews);
+            model.put("news", newsDao.getAll());
+            return new ModelAndView(model, "news.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }

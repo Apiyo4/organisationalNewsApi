@@ -180,11 +180,27 @@ public class App {
             Department newDepartment = new Department(departmentName, description, numberOfEmployees);
             departmentDao.add(newDepartment);
             model.put("departments", departmentDao.getAll());
-            return new ModelAndView(model, "index.hbs");
+            return new ModelAndView(model, "department.hbs");
         }, new HandlebarsTemplateEngine());
         get("/departments", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             return new ModelAndView(model, "index.hbs");
         },new HandlebarsTemplateEngine());
+        get("/users/new", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            return new ModelAndView(model, "user.hbs");
+        },new HandlebarsTemplateEngine());
+        post("/users", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            String userName = request.queryParams("userName");
+            int departmentId = Integer.parseInt(request.queryParams("departmentId"));
+            String role = request.queryParams("role");
+            User newUser = new User(userName, departmentId, role);
+            userDao.add(newUser);
+            model.put("users", userDao.getAll());
+            return new ModelAndView(model, "user.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
     }
 }

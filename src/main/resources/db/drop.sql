@@ -1,0 +1,2 @@
+DROP DATABASE organisational_news_api;
+DROP DATABASE organisational_news_api;

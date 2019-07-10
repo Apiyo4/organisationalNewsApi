@@ -20,8 +20,18 @@ import static spark.Spark.*;
 
 public class App {
 
+    static int getHerokuAssignedPort() {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        if (processBuilder.environment().get("PORT") != null) {
+            return Integer.parseInt(processBuilder.environment().get("PORT"));
+        }
+        return 4567; //return default port if heroku-port isn't set (i.e. on localhost)
+    }
+
     public static void main(String[] args) {
         staticFileLocation("/public");
+        port(getHerokuAssignedPort());
+
         Sql2oUserDao userDao;
         Sql2oDepartmentDao departmentDao;
         Sql2oNewsDao newsDao;
@@ -150,16 +160,16 @@ public class App {
         });
 
 
-        //FILTERS
-        exception(ApiException.class, (exception, req, res) -> {
-            ApiException err = exception;
-            Map<String, Object> jsonMap = new HashMap<>();
-            jsonMap.put("status", err.getStatusCode());
-            jsonMap.put("errorMessage", err.getMessage());
-            res.type("application/json");
-            res.status(err.getStatusCode());
-            res.body(gson.toJson(jsonMap));
-        });
+//        //FILTERS
+//        exception(ApiException.class, (exception, req, res) -> {
+//            ApiException err = exception;
+//            Map<String, Object> jsonMap = new HashMap<>();
+//            jsonMap.put("status", err.getStatusCode());
+//            jsonMap.put("errorMessage", err.getMessage());
+//            res.type("application/json");
+//            res.status(err.getStatusCode());
+//            res.body(gson.toJson(jsonMap));
+//        });
 
 
 //        after((req, res) ->{

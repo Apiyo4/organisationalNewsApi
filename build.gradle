@@ -2,6 +2,7 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 mainClassName = 'App'
+applicationName = "apiyo-kazi-track"
 
 group 'organisationalnewsapi'
 version '1.0-SNAPSHOT'
@@ -21,3 +22,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.5'
     compile "com.sparkjava:spark-template-handlebars:2.5.5"
 }
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installDist'])

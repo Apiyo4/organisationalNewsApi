@@ -1,10 +1,10 @@
 # Organisational News Api
 #### By **Annette Odingo**
 ## Description
-This application allows a user to input and record details regarding departments, news and employees. 
+This application allows a user to input and recordquotes and also read quotes and picture story. 
 ## Setup/Installation Requirements
 * Make sure you have all the Requirements of running Java apps installed such as JUnit, intellij, SDK, JDK.
-* Clone the project into your machine from https://github.com/apiyo4/organisationalNewsApi .
+* Clone the project into your machine from https://github.com/apiyo4/Quotes .
 * Gradle run javac organisationalNewsApi.java to compile and java organisationalNewsApi to run the program.
 ## Specs
 * User adds department details.
@@ -30,4 +30,4 @@ Postman
 In case of anything feel free to get in touch at odingoannette@gmail.com
 ### License
 *MIT* 
-Copyright (c) {2019} **Annette Odingo** https://github.com/Apiyo4/organisationalNewsApi/blob/master/LICENSE
+Copyright (c) {2019} **Annette Odingo** https://github.com/Apiyo4/Quotes/blob/master/LICENSE
